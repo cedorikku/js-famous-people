@@ -22,10 +22,14 @@ cards.addEventListener('click', (e) => {
   }
 });
 
-document.querySelector('#close').addEventListener('click', () => {
-  document.querySelector('#firstArtist').style.display = 'none';
-  document.querySelector('#secondArtist').style.display = 'none';
-  document.querySelector('#thirdArtist').style.display = 'none';
-  document.querySelector('#mainPage').style.display = 'block';
-  console.log('close was clicked');
+const closeButtons = document.querySelectorAll('.btn-close');
+
+closeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('#firstArtist').style.display = 'none';
+    document.querySelector('#secondArtist').style.display = 'none';
+    document.querySelector('#thirdArtist').style.display = 'none';
+    document.querySelector('#mainPage').style.display = 'block';
+    console.log('close was clicked');
+  });
 });

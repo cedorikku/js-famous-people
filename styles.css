@@ -87,6 +87,16 @@ p {
     justify-content: center;
 }
 
+#secondArtist {
+    display: none;
+    justify-content: center;
+}
+
+#thirdArtist {
+    display: none;
+    justify-content: center;
+}
+
 .controlContainer {
     display: flex;
     align-items: flex-start;
