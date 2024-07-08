@@ -32,10 +32,26 @@ p {
 }
 
 .card {
+    position: relative;
+    text-align: left;
+    color: white;
     margin: 20px;
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+}
+
+.text {
+    position: absolute;
+    font-weight: 600 !important;
+    font-size: 1.5rem;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.295);
+    bottom: -30px;
+    right: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover .text {
+    bottom: 16px;
 }
 
 .card:hover {
@@ -53,7 +69,7 @@ p {
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
-}   
+}
 
 .btn-close {
     outline: none;
